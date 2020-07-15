@@ -1,5 +1,5 @@
-/*import validator from './validator.js';
+import validator from './validator.js';
+alert("hi");
+console.log(validator);
 
-console.log(validator);*/
 
-alert ("Hola Mundo");

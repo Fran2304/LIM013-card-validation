@@ -12,11 +12,32 @@
     </header>
     <main>
       <!--vamos a tener 3 vistas o secciones-->
-      <section id="selectCourses"> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
+      <section id="firstView"> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
 
       </section>
-      <section id= "askInformation">
-
+      <section id= "secondView">
+          <section id="messageAsk">
+            <p>Estás a un paso de completar tu compra</p>
+          </section>
+          <section id= "containerForm">
+            <form>
+              <label for= "name">Nombre completo</label>
+              <input id="name" type="text">
+              <label for= "email">Correo electrónico</label>
+              <input id="email" type="text">
+              <label for= "cardNumber">N° de tarjeta</label>
+              <input id="cardNumber" type="text">
+              <label for= "csv">Csv</label>
+              <input id="csv" type="text">
+              <label for= "expireDate">Fecha de expiración</label>
+              <input id="expireDate" type="text">
+              <button type="button" onclick="pay()" >Pagar</button>
+            </form>
+          </section>
+        </section>
+      </section>
+      <section id= "thirdView">
+        
       </section>
     </main>
     <footer></footer>
