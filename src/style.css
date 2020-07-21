@@ -53,3 +53,8 @@ margin-top:50px;
 #incorrectCard{
 color:pink (ff00ff);
 }
+
+/*ocultar seccion de compra exitosa*/
+#thirdView{
+    display: none;
+}

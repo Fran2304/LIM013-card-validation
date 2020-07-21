@@ -1,7 +1,6 @@
 /*import validator from './validator.js';
 console.log(validator);*/
 
-
 const buttonPay = document.getElementById("buttonPay");
 buttonPay.addEventListener('click',() => {
   let cardNumber = document.getElementById("cardNumber").value;
@@ -46,5 +45,15 @@ buttonPay.addEventListener('click',() => {
   
   console.log (validator.isValid());
   console.log (validator.maskify());
-  document.getElementById("encripted").innerHTML= (validator.maskify());
+
+// pasar a la siguiente view si la tarjeta es valida y no es vacía. Mostrar error sino :C
+
+let thirdView=document.getElementById("thirdView");
+
+if (validator.isValid()===true){
+  thirdView.style.display="block";
+}
+
+
+document.getElementById("encripted").innerHTML= (validator.maskify());
 });
