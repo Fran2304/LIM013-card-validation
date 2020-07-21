@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Aprende en casa</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -12,35 +13,51 @@
     </header>
     <main>
       <!--vamos a tener 3 vistas o secciones-->
-      <section id="firstView"> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
+      <section id="firstView" class= ""> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
 
       </section>
-      <section id= "secondView">
+      <section id= "secondView"class= "view">
           <section id="messageAsk">
-            <p>Estás a un paso de completar tu compra</p>
+            <p class="subtitle">Estás a un paso de completar tu compra</p>
           </section>
           <section id= "containerForm">
-            <form>
-              <label for= "name">Nombre completo</label>
-              <input id="name" type="text">
-              <label for= "email">Correo electrónico</label>
-              <input id="email" type="text">
-              <label for= "cardNumber">N° de tarjeta</label>
-              <input id="cardNumber" type="text">
-              <label for= "csv">Csv</label>
-              <input id="csv" type="text">
-              <label for= "expireDate">Fecha de expiración</label>
-              <input id="expireDate" type="text">
-              <button type="button" onclick="pay()" >Pagar</button>
+            <form name="formulario">
+              <section>
+                <label for= "name">Nombre completo</label>
+                <input id="name" type="text" name="name" >
+              </section>
+              <section>
+                <label for= "email">Correo electrónico</label>
+                <input id="email" type="email" name="email">
+              </section>
+              <section>
+                <label for= "cardNumber">N° de tarjeta</label>
+                <input id="cardNumber" type="text" maxlength="16" name="cardNumber">
+                <p id="incorrectCard"></p>
+              </section>
+              <section>
+                <label for= "ccv">Ccv</label>
+                <input id="ccv" type="text" maxlength="4">
+              </section>
+              <section>
+                <label for= "expireDate">Fecha de expiración</label>
+                <input id="expireDate" type="date" name="expireDate">
+              </section>
+              <button id="buttonPay" type="button" >Pagar</button>
             </form>
           </section>
         </section>
       </section>
-      <section id= "thirdView">
-        
+      <section id= "thirdView" class= "view">
+        <section id="containerAnswer">
+          <p>¡Felicidades!</p>
+          <p>Compra exitosa</p>
+          <p id="encripted"></p>
+        </section>
       </section>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
+    <p>2020 Aprende en casa.Todos los derechos reservados.</p>
   </body>
 </html>

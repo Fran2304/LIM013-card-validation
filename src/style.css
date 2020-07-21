@@ -1,0 +1,55 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px; 
+}
+
+header {
+background-color: rgb(77, 210, 255);
+color: whitesmoke;
+font-size: 20px;
+text-align: center;
+height: 60px;
+padding: 5px;
+}
+.view{
+height: 600px;
+}
+.subtitle{
+font-size:25px;
+text-align: center;
+margin: 25px;    
+}
+
+.view{
+flex-direction: column;
+align-items: center;
+display:flex;
+justify-content: space-evenly;
+}
+
+#containerForm{
+background-color: rgb(236, 237, 238);
+width:400px;
+height:300px;
+padding:30px;
+margin:15px;
+border-radius: 15px;
+}
+
+input{
+margin: 10px;
+width:200px;
+}
+
+#buttonPay{
+position: relative;
+left:150px;
+width:100px;
+height:30px;
+margin-top:50px;
+}
+
+#incorrectCard{
+color:pink (ff00ff);
+}
