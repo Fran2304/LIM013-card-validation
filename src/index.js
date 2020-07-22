@@ -1,5 +1,5 @@
-/*import validator from './validator.js';
-console.log(validator);*/
+import validator from './validator.js';
+//console.log(validator);
 
 const buttonPay = document.getElementById("buttonPay");
 buttonPay.addEventListener('click',() => {
@@ -7,53 +7,27 @@ buttonPay.addEventListener('click',() => {
   if (cardNumber.length === 0) {
     document.getElementById("incorrectCard").innerHTML= "Ingrese un número de tarjeta";
   }
-
-  const validator = { 
-    creditCardNumber:cardNumber,
-    isValid :function() {
-      let converToNumber=validator.creditCardNumber;
-      let arrayCard= Array.from(converToNumber);
-      let reverseCard= arrayCard.reverse();
-      let suma=0;
-      for (let i=0;i<=reverseCard.length - 1;i++){
-        if(i%2 !== 0){
-          suma+= parseInt(reverseCard[i]);
-        }else if((parseInt(reverseCard[i]) * 2) <=9){
-          suma+= parseInt(reverseCard[i]*2);
-        }else{
-          suma+=(parseInt((parseInt(reverseCard[i]*2)).toString().charAt(0))+parseInt((parseInt(reverseCard[i]*2)).toString().charAt(1)));
-        }
-      };
-      return suma%10===0;
-    },
-    
-    maskify: function () {
-      let stringCard=validator.creditCardNumber;
-      let newString="";
-       //remplaza x #
-      for (let i=0;i<stringCard.length;i++){
-        if(i>=(stringCard.length-4)){
-          newString += stringCard.charAt(i);
-        } else {
-          newString += "#";
-        }
-      }
-      return newString;
-    }
-
-  };
+  let cardValid=validator.isValid(cardNumber);
+  let cardMask=validator.maskify(cardNumber);
   
-  console.log (validator.isValid());
-  console.log (validator.maskify());
-
+  console.log(cardValid);
+  console.log(cardMask);
+   
 // pasar a la siguiente view si la tarjeta es valida y no es vacía. Mostrar error sino :C
 
 let thirdView=document.getElementById("thirdView");
+let secondView=document.getElementById("secondView");
 
-if (validator.isValid()===true){
-  thirdView.style.display="block";
+if (cardNumber.length !== 0){
+  if(cardValid===true){
+    thirdView.style.display="block";
+    secondView.style.display ="none";
+  }else {
+    document.getElementById("incorrectCard").innerHTML= "El número de tarjeta es inválido";
+  }
+} else{
+  document.getElementById("incorrectCard").innerHTML= "Ingrese un número de tarjeta";
 }
 
-
-document.getElementById("encripted").innerHTML= (validator.maskify());
+document.getElementById("encripted").innerHTML= (cardMask);
 });
