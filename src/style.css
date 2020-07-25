@@ -3,36 +3,41 @@
     margin: 0px;
     padding: 0px; 
 }
+body {
+position: relative;
+background: #FFFFFF;
+}
 
 header {
-background-color: rgb(77, 210, 255);
-color: whitesmoke;
+background-color:#25D9D9;
+color: #FFFFFF;
 font-size: 20px;
+font-weight: bolder;
 text-align: center;
-height: 60px;
-padding: 5px;
+padding: 10px;
 }
 
 .subtitle{
 font-size:25px;
+font-weight: bold;
 text-align: center;
-margin: 25px;    
+margin-top: 40px; 
+color: #032CA6;  
 }
 
 .view{
 height: 600px;
 flex-direction: column;
 align-items: center;
-justify-content: space-evenly;
 }
 
-#containerForm{
-background-color: rgb(236, 237, 238);
+
+.askInfo{
+background-color:#F5F5F5;
 width:400px;
-height:300px;
-padding:30px;
+padding:20px;
 margin:15px;
-border-radius: 15px;
+border-radius: 15px; 
 }
 
 input{
@@ -42,19 +47,24 @@ width:200px;
 
 #buttonPay{
 position: relative;
-left:150px;
-width:100px;
-height:30px;
-margin-top:50px;
+left:125px;
+width:200px;
+height:40px;
+margin-top:25px;
+background-color: #032CA6;
+color: #FFFFFF;
+font-size: 20px;
+border-radius: 15px;
 }
 
-#incorrectCard{
-color:pink (ff00ff);
+.textBoldSmall{
+font-size:20px;
 }
 
 /*ocultar seccion de compra exitosa*/
 #secondView{
     display:flex;
+    background-color:#FFFFFF;
 }
 
 #thirdView{
@@ -63,4 +73,14 @@ color:pink (ff00ff);
 
 .hide{
     display:none;
+}
+
+/*tercera vista*/
+#successImage{
+width:50%;
+}
+
+
+footer{
+padding: 10px;
 }

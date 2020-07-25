@@ -16,48 +16,58 @@
       <section id="firstView" class= ""> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
 
       </section>
-      <section id= "secondView"class= "view">
+      <section id="secondView" class="view">
           <section id="messageAsk">
-            <p class="subtitle">Estás a un paso de completar tu compra</p>
+            <p class="subtitle">¡Estás a un paso de completar tu compra!</p>
           </section>
           <section id= "containerForm">
             <form name="formulario">
-              <section>
-                <label for= "name">Nombre completo</label>
-                <input id="name" type="text" name="name" >
-              </section>
-              <section>
-                <label for= "email">Correo electrónico</label>
-                <input id="email" type="email" name="email">
-              </section>
-              <section>
-                <label for= "cardNumber">N° de tarjeta</label>
-                <input id="cardNumber" type="text" maxlength="16" name="cardNumber">
-                <p id="incorrectCard"></p>
-              </section>
-              <section>
-                <label for= "ccv">Ccv</label>
-                <input id="ccv" type="text" maxlength="4">
-              </section>
-              <section>
-                <label for= "expireDate">Fecha de expiración</label>
-                <input id="expireDate" type="date" name="expireDate">
-              </section>
-              <button id="buttonPay" type="button" >Pagar</button>
+              <div class="askInfo"> 
+                <p class="textBoldSmall">Ingresa tus datos: </p>
+                <div>
+                  <label for= "name">Nombre completo:</label>
+                  <input id="name" type="text" name="name" >
+                </div>
+                <div>
+                  <label for= "email">Correo electrónico:</label>
+                  <input id="email" type="email" name="email">
+                </div>
+              </div>
+              <div class="askInfo">
+                <div>
+                  <p class="textBoldSmall">Ingresa los datos de tu tarjeta: </p>
+                  <label for= "cardNumber">N° de tarjeta</label>
+                  <input id="cardNumber" type="text" maxlength="16" name="cardNumber">
+                  <p id="incorrectCard"></p>
+                </div>
+                <div>
+                  <label for= "ccv">Ccv:</label>
+                  <input id="ccv" type="text" maxlength="4">
+                </div>
+                <div>
+                  <label for= "expireDate">Fecha de expiración:</label>
+                  <input id="expireDate" type="date" name="expireDate">
+                </div>
+              </div>
+                <button id="buttonPay" type="button" >Pagar</button>
             </form>
           </section>
         </section>
-      </section>
       <section id= "thirdView" class= "view">
         <section id="containerAnswer">
-          <p>¡Felicidades F!</p>
+          <p class="subtitle">¡Felicidades!</p>
           <p>Compra exitosa</p>
           <p id="encripted"></p>
+          <p id="nameCatch"></p>
+          <p id="emailCatch"></p>
+        </section>
+        <section>
+          <img id="successImage" src="undraw_celebration_0jvk.svg" alt="felicidades">
         </section>
       </section>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
-    <p>2020 Aprende en casa.Todos los derechos reservados.</p>
+    <p>2020 Aprende en casa. Todos los derechos reservados.</p>
   </body>
 </html>
