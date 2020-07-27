@@ -1,11 +1,7 @@
 * {
-    font-family: 'Lato', sans-serif;
-    margin: 0px;
-    padding: 0px; 
-}
-body {
-position: relative;
-background: #FFFFFF;
+font-family: 'Lato', sans-serif;
+margin: 0px;
+padding: 0px; 
 }
 
 header {
@@ -15,20 +11,22 @@ font-size: 20px;
 font-weight: bolder;
 text-align: center;
 padding: 10px;
+height: 50px;
+}
+
+.view{
+position: relative;
+width: auto;
+height: 640px;
 }
 
 .subtitle{
 font-size:25px;
 font-weight: bold;
 text-align: center;
-margin-top: 40px; 
+margin-top: 40px;
+margin-bottom:40px;
 color: #032CA6;  
-}
-
-.view{
-height: 600px;
-flex-direction: column;
-align-items: center;
 }
 
 
@@ -36,12 +34,12 @@ align-items: center;
 background-color:#F5F5F5;
 width:400px;
 padding:20px;
-margin:15px;
+margin-bottom:30px;
 border-radius: 15px; 
 }
 
 input{
-margin: 10px;
+margin-top: 10px;
 width:200px;
 }
 
@@ -59,28 +57,64 @@ border-radius: 15px;
 
 .textBoldSmall{
 font-size:20px;
+
 }
 
-/*ocultar seccion de compra exitosa*/
+/*ocultar seccion de formulario*/
 #secondView{
-    display:flex;
-    background-color:#FFFFFF;
-}
-
-#thirdView{
-    display: none;
-}
-
-.hide{
-    display:none;
+display:flex;
+flex-direction: column;
+align-items: center;
 }
 
 /*tercera vista*/
-#successImage{
+#thirdView{
+display: none;
+flex-direction: column;
+align-items: center;
+}
+
+.container{
+width: 1200px;
+height: 600px;
+background: #F5F5F5;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.congratulations{
+display:block;
+color:#032CA6;
+font-weight: bold;
+font-size:30px;
+margin: 15px;
+text-align:center;
+}
+.showInfo{
+background-color: #F25CA2;
+margin-top:20px;
+width:350px;
+opacity:0.5;
+padding:15px;
+border-radius: 15px;
+color: #FFFFFF;
+}
+
+.successImage{
+position: relative;
+margin-top: 20px;
+left: 230px;
 width:50%;
 }
 
-
 footer{
-padding: 10px;
+height: 30px;
+text-align: center;
+width: 1200px;
+background-color: #F5F5F5;
+margin-left: 190px;
+padding: 5px;
+margin-right:190px;
 }
+

@@ -27,13 +27,13 @@ if (cardNumber.length !== 0 && cardNumber !== "0"){
   incorrectCard.textContent= "*Ingrese un número de tarjeta";
 }
 //Coloca la tarjeta encriptada
-encriptedCard.innerHTML= (cardMask);
+encriptedCard.innerHTML= `N° de tarjeta: ${cardMask}`;
 //Coloca los datos del cliente  en la tercera vista
 let name=document.getElementById("name").value;
 let email=document.getElementById("email").value;
 let nameCatch=document.getElementById("nameCatch");
 let emailCatch=document.getElementById("emailCatch");
-nameCatch.innerHTML=(name);
-emailCatch.innerHTML=(email);
+nameCatch.innerHTML=`Nombre: ${name}`;
+emailCatch.innerHTML=`Correo: ${email}`;
 
 });

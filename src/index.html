@@ -17,8 +17,8 @@
 
       </section>
       <section id="secondView" class="view">
-          <section id="messageAsk">
-            <p class="subtitle">¡Estás a un paso de completar tu compra!</p>
+          <section class="subtitle">
+            <p>¡Estás a un paso de completar tu compra!</p>
           </section>
           <section id= "containerForm">
             <form name="formulario">
@@ -54,20 +54,25 @@
           </section>
         </section>
       <section id= "thirdView" class= "view">
-        <section id="containerAnswer">
-          <p class="subtitle">¡Felicidades!</p>
-          <p>Compra exitosa</p>
-          <p id="encripted"></p>
-          <p id="nameCatch"></p>
-          <p id="emailCatch"></p>
-        </section>
-        <section>
-          <img id="successImage" src="undraw_celebration_0jvk.svg" alt="felicidades">
+        <section id="containerAnswer" class="container">
+          <section class="congratulations" >
+            <p>¡Felicidades! Compra exitosa</p>
+          </section>
+          <section>
+            <img class="successImage" src="undraw_celebration_0jvk.svg" alt="felicidades">
+          </section>
+          <section class="showInfo">
+            <p class="textBoldSmall">Datos de pago</p><br>
+            <p id="nameCatch"></p>
+            <p id="emailCatch"></p>
+            <p id="encripted"></p>
+          </section> 
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>2020 Aprende en casa. Todos los derechos reservados.</p>
+    </footer>
     <script src="index.js" type="module"></script>
-    <p>2020 Aprende en casa. Todos los derechos reservados.</p>
   </body>
 </html>
