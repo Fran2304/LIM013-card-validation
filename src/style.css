@@ -5,7 +5,7 @@ padding: 0px;
 }
 
 header {
-background-color:#25D9D9;
+background-color:#EB4B98;
 color: #FFFFFF;
 font-size: 20px;
 font-weight: bolder;
@@ -19,6 +19,54 @@ position: relative;
 width: auto;
 height: 640px;
 }
+/*primeraview*/
+#firstView{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/*landing*/
+#landing{
+display:flex;
+width:1020;
+margin-top:20px;
+}
+#landingImage{
+width: 580px;
+height:200px;
+}
+#landingSide{
+width: 400px;
+background-color: #F49FBC;
+height: 185px;
+font-size: 70px;
+color: #FFFFFF;
+padding-left:40px;
+padding-top: 15px;
+}
+/*parrilla de cursos*/
+#parrilla{
+width: 960px;
+height: 600px;
+background: #F5F5F5;
+margin-bottom:50px;
+padding:10px 30px;
+}
+
+.curso{
+width: 280px;
+height:200px;
+margin:20px;
+background-color: #FFFFFF;
+float: left;
+border-radius: 15px;
+}
+
+.cursoImage{
+width: 280px;
+}
+
+/*segunda view*/
 
 .subtitle{
 font-size:25px;
@@ -28,7 +76,6 @@ margin-top: 40px;
 margin-bottom:40px;
 color: #032CA6;  
 }
-
 
 .askInfo{
 background-color:#F5F5F5;
@@ -57,12 +104,11 @@ border-radius: 15px;
 
 .textBoldSmall{
 font-size:20px;
-
 }
 
 /*ocultar seccion de formulario*/
 #secondView{
-display:flex;
+display:none;
 flex-direction: column;
 align-items: center;
 }
@@ -92,10 +138,9 @@ margin: 15px;
 text-align:center;
 }
 .showInfo{
-background-color: #F25CA2;
+background-color: #F49FBC;
 margin-top:20px;
 width:350px;
-opacity:0.5;
 padding:15px;
 border-radius: 15px;
 color: #FFFFFF;
@@ -103,7 +148,7 @@ color: #FFFFFF;
 
 .successImage{
 position: relative;
-margin-top: 20px;
+margin-top:20px;
 left: 230px;
 width:50%;
 }
@@ -111,10 +156,11 @@ width:50%;
 footer{
 height: 30px;
 text-align: center;
-width: 1200px;
+width: 1030px;
 background-color: #F5F5F5;
-margin-left: 190px;
-padding: 5px;
-margin-right:190px;
+margin-top: 200px;
+margin-left: 260px;
+padding:5px;
+margin-right:250px;
 }
 

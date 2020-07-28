@@ -1,13 +1,17 @@
 import validator from './validator.js';
 //console.log(validator);
 
+//Cambia de la primera view
+
+
+
+//Segun view lógica de validación de datos
 let catchCard=document.getElementById("cardNumber");
 let incorrectCard=document.getElementById("incorrectCard");
 incorrectCard.style.color="#F25CA2";
 let encriptedCard=document.getElementById("encripted");
 let thirdView=document.getElementById("thirdView");
 let secondView=document.getElementById("secondView");
-
 
 const buttonPay = document.getElementById("buttonPay");
 buttonPay.addEventListener("click",() => {
@@ -35,5 +39,5 @@ let nameCatch=document.getElementById("nameCatch");
 let emailCatch=document.getElementById("emailCatch");
 nameCatch.innerHTML=`Nombre: ${name}`;
 emailCatch.innerHTML=`Correo: ${email}`;
-
 });
+
