@@ -39,10 +39,11 @@ buttonPay.addEventListener('click',() => {
   let ccv=document.getElementById('ccv').value;
   let expireDate= document.getElementById('expireDate').value;
 
+
 if (name !== ''){
     if(email!== ''){
       if(ccv!==''){
-        if(expireDate!==''){
+        if(expireDate!=='' && Date.parse(expireDate) >= Date.now()){
           if(cardNumber.length !== 0 && cardNumber !== "0"){
             if(cardValid===true){
               thirdView.style.display='flex';
@@ -54,7 +55,7 @@ if (name !== ''){
             incorrectCard.textContent= "*Ingrese un número de tarjeta"
           }
         }else{
-          incorrectExpireDate.textContent = '*Ingrese la fecha expiración de la tarjeta '
+          incorrectExpireDate.textContent = '*Ingrese una fecha expiración válida'
         }
       }else{
         incorrectCcv.textContent = '*Ingrese un código de verificación';
@@ -65,6 +66,7 @@ if (name !== ''){
 }else{
   incorrectName.textContent= '*Ingrese un nombre';
 }
+
 
 //Coloca la tarjeta encriptada
 encriptedCard.innerHTML= `N° de tarjeta: ${cardMask}`;

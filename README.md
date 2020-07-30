@@ -318,3 +318,22 @@ Organización del Trabajo:
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
+
+## 6. Proyecto: Aprende en casa
+* Es una web de venta de cursos online enfocados al diseño gráfico. El cliente ingresa a la web selecciona cualquiera de los botones y lo va a llevar a la sección de pago. En la sección de pago el cliente deberá colocar los datos de su tarjeta y datos personales: número de tarjeta, ccv, fecha de vencimiento, nombre y correo. Se validará que los datos sean válidos y de serlo se mostrará una página que indique compra exitosa. Si los datos no son correctos debajo de cada petición de dato apareceá un mensaje de error.
+
+* Proyecto final:
+![](final1.jpg)
+![](final2.jpg)
+![](final3.jpg)
+![](final4.jpg)
+![](final5.jpg)
+![](final6.jpg)
+
+### Quiénes son los principales usuarios de producto.
+Los usuarios son todos los interesados en adquirir un curso online de diseño gráfico. Básicamente serían hombres y mujeres entre los 15 a 40 años, pueden ser estudiantes,profesionales o interesados marketing, ux o progamación. De igual modo son personas que deben de contar con una tarjeta de crédito o débito y que estén interesados en llevar estos cursos de manera virtual.
+### Cuáles son los objetivos de estos usuarios en relación con tu producto.
+El objetivo de los usuarios es potenciar su desarrollo profesional y laboral. 
+### Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Esta plataforma acerca la educación a muchas personas que por la sitaución actual no pueden acceder a la educación presencial. De igual modo esta plataforma brinda otra perspectiva en la que el estudiante es el que establece y sigue sus propios objetivos de aprendizaje. 
+

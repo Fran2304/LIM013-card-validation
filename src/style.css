@@ -134,7 +134,7 @@ background:url("https://img.webme.com/pic/c/cssplantillas/confeti.gif")repeat fi
 }
 
 .container{
-width: 1200px;
+width: 1020px;
 height: 600px;
 background: #F5F5F5;
 display: flex;
@@ -172,8 +172,8 @@ text-align: center;
 width: 1020px;
 background-color: #F5F5F5;
 margin-top: 120px;
-margin-left: 200px;
+margin-left: 270px;
 padding:5px;
-margin-right:250px;
+margin-right:200px;
 }
 
