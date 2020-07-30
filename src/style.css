@@ -55,11 +55,23 @@ padding:10px 30px;
 
 .curso{
 width: 280px;
-height:200px;
+height:210px;
 margin:20px;
 background-color: #FFFFFF;
 float: left;
 border-radius: 15px;
+color:#5158BB;
+text-align: center;
+font-weight: bold;
+}
+
+.item{
+background-color: #5158BB;
+color: #FFFFFF;
+width: 100px;
+border-radius: 5px;
+height: 20px;
+margin-top: 10px;
 }
 
 .cursoImage{
@@ -74,7 +86,7 @@ font-weight: bold;
 text-align: center;
 margin-top: 40px;
 margin-bottom:40px;
-color: #032CA6;  
+color: #5158BB;  
 }
 
 .askInfo{
@@ -96,7 +108,7 @@ left:125px;
 width:200px;
 height:40px;
 margin-top:25px;
-background-color: #032CA6;
+background-color: #5158BB;
 color: #FFFFFF;
 font-size: 20px;
 border-radius: 15px;
@@ -118,6 +130,7 @@ align-items: center;
 display: none;
 flex-direction: column;
 align-items: center;
+background:url("https://img.webme.com/pic/c/cssplantillas/confeti.gif")repeat fixed;
 }
 
 .container{
@@ -131,7 +144,7 @@ align-items: center;
 
 .congratulations{
 display:block;
-color:#032CA6;
+color:#5158BB;
 font-weight: bold;
 font-size:30px;
 margin: 15px;
@@ -156,10 +169,10 @@ width:50%;
 footer{
 height: 30px;
 text-align: center;
-width: 1030px;
+width: 1020px;
 background-color: #F5F5F5;
-margin-top: 200px;
-margin-left: 260px;
+margin-top: 120px;
+margin-left: 200px;
 padding:5px;
 margin-right:250px;
 }

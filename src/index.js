@@ -1,42 +1,76 @@
 import validator from './validator.js';
 //console.log(validator);
 
-//Cambia de la primera view
+//Cambia de la primera view con cualquier botón. Por eso usamo el ciclo y queryselector All :) 
+let firstView=document.getElementById('firstView');
+let secondView=document.getElementById('secondView');
 
-
+const item = document.querySelectorAll('.item');
+for (let i = 0; i<item.length; i++){
+  item[i].addEventListener('click',() => {
+    firstView.style.display='none';
+    secondView.style.display='flex';
+  })
+}
 
 //Segun view lógica de validación de datos
-let catchCard=document.getElementById("cardNumber");
-let incorrectCard=document.getElementById("incorrectCard");
-incorrectCard.style.color="#F25CA2";
-let encriptedCard=document.getElementById("encripted");
-let thirdView=document.getElementById("thirdView");
-let secondView=document.getElementById("secondView");
+let catchCard=document.getElementById('cardNumber');
+let incorrectCard=document.getElementById('incorrectCard');
+incorrectCard.style.color='#F25CA2';
+let incorrectName=document.getElementById('incorrectName');
+let incorrectEmail=document.getElementById('incorrectEmail');
+let incorrectCcv=document.getElementById('incorrectCcv');
+let incorrectExpireDate=document.getElementById('incorrectExpireDate');
+let encriptedCard=document.getElementById('encripted');
+let thirdView=document.getElementById('thirdView');
 
-const buttonPay = document.getElementById("buttonPay");
-buttonPay.addEventListener("click",() => {
+
+const buttonPay = document.getElementById('buttonPay');
+
+buttonPay.addEventListener('click',() => {
+//obtiene el valor de la tarjeta
   let cardNumber = catchCard.value;
 //llama a las funciones de validator
   let cardValid=validator.isValid(cardNumber);
   let cardMask=validator.maskify(cardNumber);  
-// Si la tarjeta es diferente a vacío y válida, pasar a la siguiente vista. De lo contrario error. :C
-if (cardNumber.length !== 0 && cardNumber !== "0"){
-  if(cardValid===true){
-    thirdView.style.display="flex";
-    secondView.style.display ="none";
-  }else {
-    incorrectCard.textContent= "*El número de tarjeta es inválido";
-  }
-} else{
-  incorrectCard.textContent= "*Ingrese un número de tarjeta";
+// Verifica datos ingresados para pasar a la siguiente vista. De lo contrario error. :C
+  let name=document.getElementById('name').value;
+  let email=document.getElementById('email').value;
+  let ccv=document.getElementById('ccv').value;
+  let expireDate= document.getElementById('expireDate').value;
+
+if (name !== ''){
+    if(email!== ''){
+      if(ccv!==''){
+        if(expireDate!==''){
+          if(cardNumber.length !== 0 && cardNumber !== "0"){
+            if(cardValid===true){
+              thirdView.style.display='flex';
+              secondView.style.display ='none';
+            }else{
+              incorrectCard.textContent= "*El número de tarjeta es inválido";
+            }
+          }else{
+            incorrectCard.textContent= "*Ingrese un número de tarjeta"
+          }
+        }else{
+          incorrectExpireDate.textContent = '*Ingrese la fecha expiración de la tarjeta '
+        }
+      }else{
+        incorrectCcv.textContent = '*Ingrese un código de verificación';
+      }
+    }else{
+      incorrectEmail.textContent = '*Ingrese un mail';
+    }
+}else{
+  incorrectName.textContent= '*Ingrese un nombre';
 }
+
 //Coloca la tarjeta encriptada
 encriptedCard.innerHTML= `N° de tarjeta: ${cardMask}`;
 //Coloca los datos del cliente  en la tercera vista
-let name=document.getElementById("name").value;
-let email=document.getElementById("email").value;
-let nameCatch=document.getElementById("nameCatch");
-let emailCatch=document.getElementById("emailCatch");
+let nameCatch=document.getElementById('nameCatch');
+let emailCatch=document.getElementById('emailCatch');
 nameCatch.innerHTML=`Nombre: ${name}`;
 emailCatch.innerHTML=`Correo: ${email}`;
 });

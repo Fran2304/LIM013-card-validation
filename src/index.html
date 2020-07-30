@@ -20,36 +20,36 @@
           </div>
           <img id="landingImage" src="landing.jpg">
         </section>
-        <section id="parrilla"> 
+        <section id="parrilla" class="parrilla"> 
           <div class="curso">
             <img src="photoshop.jpg" alt="" class="cursoImage">
             <p>Photoshop</p>
-            <button id="comprarCurso" type="button">Comprar</button>
+            <button class="item" type="button">Comprar</button>
           </div>
           <div class="curso">
             <img src="ilustrator.jpg" alt="" class="cursoImage">
             <p>Adobe Illustrator</p>
-            <button>Comprar</button>
+            <button class="item" type="button">Comprar</button>
           </div>
           <div class="curso">
             <img src="premiere.jpg" alt="" class="cursoImage">
             <p>Adobe Premiere</p>
-            <button>Comprar</button>
+            <button class="item" type="button">Comprar</button>
           </div>
           <div class="curso">
             <img src="figma.jpg" alt="" class="cursoImage">
             <p>Figma</p>
-            <button>Comprar</button>
+            <button class="item" type="button">Comprar</button>
           </div>
           <div class="curso">
             <img src="effects.jpg" alt="" class="cursoImage">
             <p>After effects</p>
-            <button>Comprar</button>
+            <button class="item" type="button">Comprar</button>
           </div>
           <div class="curso">
             <img src="indesing.jpg" alt="" class="cursoImage">
             <p>Adobe Indesing</p>
-            <button>Comprar</button>
+            <button class="item" type="button">Comprar</button>
           </div>
         </section>                                                                      
       
@@ -65,10 +65,12 @@
                 <div>
                   <label for= "name">Nombre completo:</label>
                   <input id="name" type="text" name="name" >
+                  <p id="incorrectName" class="incorrect"></p>
                 </div>
                 <div>
                   <label for= "email">Correo electrónico:</label>
                   <input id="email" type="email" name="email">
+                  <p id= "incorrectEmail" class= "incorrect"> </p>
                 </div>
               </div>
               <div class="askInfo">
@@ -76,15 +78,17 @@
                   <p class="textBoldSmall">Ingresa los datos de tu tarjeta: </p>
                   <label for= "cardNumber">N° de tarjeta</label>
                   <input id="cardNumber" type="text" maxlength="16" name="cardNumber">
-                  <p id="incorrectCard"></p>
+                  <p id="incorrectCard" class="incorrect"></p>
                 </div>
                 <div>
                   <label for= "ccv">Ccv:</label>
                   <input id="ccv" type="text" maxlength="4">
+                  <p id="incorrectCcv" class="incorrect"></p>
                 </div>
                 <div>
                   <label for= "expireDate">Fecha de expiración:</label>
                   <input id="expireDate" type="date" name="expireDate">
+                  <p id="incorrectExpireDate" class="incorrect"></p>
                 </div>
               </div>
                 <button id="buttonPay" type="button" >Pagar</button>
