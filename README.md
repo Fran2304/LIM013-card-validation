@@ -324,10 +324,15 @@ Organización del Trabajo:
 
 * Proyecto final:
 ![](final1.jpg)
+
 ![](final2.jpg)
+
 ![](final3.jpg)
+
 ![](final4.jpg)
+
 ![](final5.jpg)
+
 ![](final6.jpg)
 
 ### Quiénes son los principales usuarios de producto.

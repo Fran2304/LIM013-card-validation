@@ -16,13 +16,18 @@ for (let i = 0; i<item.length; i++){
 //Segun view lógica de validación de datos
 let catchCard=document.getElementById('cardNumber');
 let incorrectCard=document.getElementById('incorrectCard');
-incorrectCard.style.color='#F25CA2';
+incorrectCard.style.color='#EB4B98';
 let incorrectName=document.getElementById('incorrectName');
+incorrectName.style.color='#EB4B98';
 let incorrectEmail=document.getElementById('incorrectEmail');
+incorrectEmail.style.color='#EB4B98';
 let incorrectCcv=document.getElementById('incorrectCcv');
+incorrectCcv.style.color='#EB4B98';
 let incorrectExpireDate=document.getElementById('incorrectExpireDate');
+incorrectExpireDate.style.color='#EB4B98';
 let encriptedCard=document.getElementById('encripted');
 let thirdView=document.getElementById('thirdView');
+
 
 
 const buttonPay = document.getElementById('buttonPay');
@@ -49,7 +54,7 @@ if (name !== ''){
               thirdView.style.display='flex';
               secondView.style.display ='none';
             }else{
-              incorrectCard.textContent= "*El número de tarjeta es inválido";
+              incorrectCard.textContent= '*El número de tarjeta es inválido';
             }
           }else{
             incorrectCard.textContent= "*Ingrese un número de tarjeta"
