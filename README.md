@@ -320,25 +320,42 @@ Organización del Trabajo:
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
 
 ## 6. Proyecto: Aprende en casa
-* Es una web de venta de cursos online enfocados al diseño gráfico. El cliente ingresa a la web selecciona cualquiera de los botones y lo va a llevar a la sección de pago. En la sección de pago el cliente deberá colocar los datos de su tarjeta y datos personales: número de tarjeta, ccv, fecha de vencimiento, nombre y correo. Se validará que los datos sean válidos y de serlo se mostrará una página que indique compra exitosa. Si los datos no son correctos debajo de cada petición de dato apareceá un mensaje de error.
+### Descripción
+ Es una web de venta de cursos online enfocados al diseño gráfico. El cliente ingresa a la web selecciona cualquiera de los botones y lo va a llevar a la sección de pago. En la sección de pago el cliente deberá colocar los datos de su tarjeta y datos personales: número de tarjeta, ccv, fecha de vencimiento, nombre y correo. Se validará que los datos sean válidos y de serlo se mostrará una página que indique compra exitosa. Si los datos no son correctos debajo de cada petición de dato apareceá un mensaje de error.
 
-* Proyecto final:
+### Imágenes del proyecto final:
+#### 1. Página de compra
 ![](final1.jpg)
+#### 2. Formulario de datos
+![](final2.png)
+#### 3. Formulario de datos completo
+![](final3.png)
+#### 4. Datos incorrecto
+![](final4.png)
+#### 5. Compra exitosa
+![](final5.png)
 
-![](final2.jpg)
+### Investigación Ux
 
-![](final3.jpg)
-
-![](final4.jpg)
-
-![](final5.jpg)
-
-![](final6.jpg)
-
-### Quiénes son los principales usuarios de producto.
+#### 1. Quienes son los principales usuarios del producto
 Los usuarios son todos los interesados en adquirir un curso online de diseño gráfico. Básicamente serían hombres y mujeres entre los 15 a 40 años, pueden ser estudiantes,profesionales o interesados marketing, ux o progamación. De igual modo son personas que deben de contar con una tarjeta de crédito o débito y que estén interesados en llevar estos cursos de manera virtual.
-### Cuáles son los objetivos de estos usuarios en relación con tu producto.
+#### 2. Cuáles son los objetivos de estos usuarios en relación con tu producto.
 El objetivo de los usuarios es potenciar su desarrollo profesional y laboral. 
-### Cómo crees que el producto que estás creando está resolviendo sus problemas.
+#### 3. Cómo crees que el producto que estás creando está resolviendo sus problemas.
 Esta plataforma acerca la educación a muchas personas que por la sitaución actual no pueden acceder a la educación presencial. De igual modo esta plataforma brinda otra perspectiva en la que el estudiante es el que establece y sigue sus propios objetivos de aprendizaje. 
 
+#### 4. Fotos del primer prototipo en papel.
+![](prototipo_papel1.jpg)
+![](prototipo_papel2.jpg)
+![](prototipo_papel3.jpg)
+
+
+
+#### 5. Feedback
+Al mostrar el prototipo a amigos y miembros del squad recibí el sigueinte feedback:
+
+ * Me sugirienron cambiar los colores y me recomendaro el círculo cromático :) 
+ * Colocar un footer
+ * Que el mensaje de incorrecto se muestra en la misma pantall del resultado
+ 
+#### 6. Imagen del prototipo final
