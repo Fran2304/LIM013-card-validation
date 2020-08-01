@@ -345,11 +345,9 @@ El objetivo de los usuarios es potenciar su desarrollo profesional y laboral.
 Esta plataforma acerca la educación a muchas personas que por la sitaución actual no pueden acceder a la educación presencial. De igual modo esta plataforma brinda otra perspectiva en la que el estudiante es el que establece y sigue sus propios objetivos de aprendizaje. 
 
 #### 4. Fotos del primer prototipo en papel.
-![](prototipo_papel1.jpg)
-![](prototipo_papel2.jpg)
-![](prototipo_papel3.jpg)
-
-
+![](prototipo_papel1.jpeg)
+![](prototipo_papel2.jpeg)
+![](prototipo_papel3.jpeg)
 
 #### 5. Feedback
 Al mostrar el prototipo a amigos y miembros del squad recibí el sigueinte feedback:
@@ -359,3 +357,6 @@ Al mostrar el prototipo a amigos y miembros del squad recibí el sigueinte feedb
  * Que el mensaje de incorrecto se muestra en la misma pantall del resultado
  
 #### 6. Imagen del prototipo final
+![](figma1.png)
+![](figma2.png)
+![](figma3.png)
