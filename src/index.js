@@ -2,14 +2,15 @@ import validator from './validator.js';
 //console.log(validator);
 
 //Cambia de la primera view con cualquier botón. Por eso usamo el ciclo y queryselector All :) 
-let firstView=document.getElementById('firstView');
-let secondView=document.getElementById('secondView');
+let firstContainer=document.getElementById('firstContainer')
+let secondContainer=document.getElementById('secondContainer');
 
 const item = document.querySelectorAll('.item');
 for (let i = 0; i<item.length; i++){
   item[i].addEventListener('click',() => {
-    firstView.style.display='none';
-    secondView.style.display='flex';
+    firstContainer.classList.add('hide');
+    window.scroll(0,0);
+    secondContainer.classList.remove('hide');
   })
 }
 
@@ -26,9 +27,7 @@ incorrectCcv.style.color='#EB4B98';
 let incorrectExpireDate=document.getElementById('incorrectExpireDate');
 incorrectExpireDate.style.color='#EB4B98';
 let encriptedCard=document.getElementById('encripted');
-let thirdView=document.getElementById('thirdView');
-
-
+let thirdContainer=document.getElementById('thirdContainer');
 
 const buttonPay = document.getElementById('buttonPay');
 
@@ -44,32 +43,36 @@ buttonPay.addEventListener('click',() => {
   let ccv=document.getElementById('ccv').value;
   let expireDate= document.getElementById('expireDate').value;
 
+let noError = true;
 
-if (name !== ''){
-    if(email!== ''){
-      if(ccv!==''){
-        if(expireDate!=='' && Date.parse(expireDate) >= Date.now()){
-          if(cardNumber.length !== 0 && cardNumber !== "0"){
-            if(cardValid===true){
-              thirdView.style.display='flex';
-              secondView.style.display ='none';
-            }else{
-              incorrectCard.textContent= '*El número de tarjeta es inválido';
-            }
-          }else{
-            incorrectCard.textContent= "*Ingrese un número de tarjeta"
-          }
-        }else{
-          incorrectExpireDate.textContent = '*Ingrese una fecha expiración válida'
-        }
-      }else{
-        incorrectCcv.textContent = '*Ingrese un código de verificación';
-      }
-    }else{
-      incorrectEmail.textContent = '*Ingrese un mail';
-    }
-}else{
+if (name === ''){
   incorrectName.textContent= '*Ingrese un nombre';
+  noError = false;
+}
+if(email=== ''){
+  incorrectEmail.textContent = '*Ingrese un mail';
+  noError = false;
+} 
+if(cardNumber==='' || cardNumber === "0"){
+  incorrectCard.textContent= "*Ingrese un número de tarjeta";
+  noError = false;
+}else if(cardValid===false){
+  incorrectCard.textContent= '*El número de tarjeta es inválido';
+  noError = false;  
+}
+if(ccv===''){
+  incorrectCcv.textContent = '*Ingrese un código de verificación';
+  noError = false;
+}
+if((expireDate!=='' && Date.parse(expireDate) >= Date.now())==false){
+  incorrectExpireDate.textContent = '*Ingrese una fecha expiración válida';
+  noError = false;
+}
+
+if(noError){
+  secondContainer.classList.add('hide');
+  thirdContainer.classList.remove('hide');
+  window.scroll(0,0);
 }
 
 
@@ -81,4 +84,5 @@ let emailCatch=document.getElementById('emailCatch');
 nameCatch.innerHTML=`Nombre: ${name}`;
 emailCatch.innerHTML=`Correo: ${email}`;
 });
+
 

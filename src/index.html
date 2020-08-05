@@ -9,61 +9,61 @@
   <body>
     <header>
       <!--Esto aparece en todas las vistas -->
-      <h1>Aprende en casa</h1> 
+      <h1>Aprende en casa</h1>
     </header>
     <main>
       <!--vamos a tener 3 vistas o secciones-->
-      <section id="firstView" class= "view"> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
-        <section id="landing">
-          <div id="landingSide">
-             <p>Diseño<br>gráfico</p> 
-          </div>
-          <img id="landingImage" src="imagenes/landing.jpg">
-        </section>
-        <section id="parrilla" class="parrilla"> 
-          <div class="curso">
-            <img src="imagenes/photoshop.jpg" alt="" class="cursoImage">
-            <p>Photoshop</p>
-            <button class="item" type="button">Comprar</button>
-          </div>
-          <div class="curso">
-            <img src="imagenes/ilustrator.jpg" alt="" class="cursoImage">
-            <p>Adobe Illustrator</p>
-            <button class="item" type="button">Comprar</button>
-          </div>
-          <div class="curso">
-            <img src="imagenes/premiere.jpg" alt="" class="cursoImage">
-            <p>Adobe Premiere</p>
-            <button class="item" type="button">Comprar</button>
-          </div>
-          <div class="curso">
-            <img src="imagenes/figma.jpg" alt="" class="cursoImage">
-            <p>Figma</p>
-            <button class="item" type="button">Comprar</button>
-          </div>
-          <div class="curso">
-            <img src="imagenes/effects.jpg" alt="" class="cursoImage">
-            <p>After effects</p>
-            <button class="item" type="button">Comprar</button>
-          </div>
-          <div class="curso">
-            <img src="imagenes/indesing.jpg" alt="" class="cursoImage">
-            <p>Adobe Indesing</p>
-            <button class="item" type="button">Comprar</button>
-          </div>
-        </section>                                                                      
-      
-      </section>
-      <section id="secondView" class="view">
-          <section class="subtitle">
-            <p>¡Estás a un paso de completar tu compra!</p>
+      <div id="firstContainer" class="view">  
+        <section id="firstView" class= "firstView"> <!--aquí el cliente selecciona cursos. todos los botones llevan a la siguiente section-->
+          <section id="landing">
+            <div id="landingSide">
+               <p>Diseño<br>gráfico</p> 
+            </div>
+            <img id="landingImage" src="imagenes/landing.jpg">
           </section>
+          <section id="parrilla" class="parrilla"> 
+            <div class="curso">
+              <img src="imagenes/photoshop.jpg" alt="" class="cursoImage">
+              <p>Photoshop</p>
+              <button class="item" type="button">Comprar</button>
+            </div>
+            <div class="curso">
+              <img src="imagenes/ilustrator.jpg" alt="" class="cursoImage">
+              <p>Adobe Illustrator</p>
+              <button class="item" type="button">Comprar</button>
+            </div>
+            <div class="curso">
+              <img src="imagenes/premiere.jpg" alt="" class="cursoImage">
+              <p>Adobe Premiere</p>
+              <button class="item" type="button">Comprar</button>
+            </div>
+            <div class="curso">
+              <img src="imagenes/figma.jpg" alt="" class="cursoImage">
+              <p>Figma</p>
+              <button class="item" type="button">Comprar</button>
+            </div>
+            <div class="curso">
+              <img src="imagenes/effects.jpg" alt="" class="cursoImage">
+              <p>After effects</p>
+              <button class="item" type="button">Comprar</button>
+            </div>
+            <div class="curso">
+              <img src="imagenes/indesing.jpg" alt="" class="cursoImage">
+              <p>Adobe Indesing</p>
+              <button class="item" type="button">Comprar</button>
+            </div>
+          </section>                                                                      
+        </section>
+      </div>
+      <div id="secondContainer" class="view hide">
+        <section id="secondView" class="secondView">
+          <h2 class="subtitle">¡Estás a un paso de completar tu compra!</h2>
           <section id= "containerForm">
             <form name="formulario">
               <div class="askInfo"> 
                 <p class="textBoldSmall">Ingresa tus datos: </p>
                 <div>
-                  <label for= "name">Nombre completo</label>
+                  <label for= "name" class="name">Nombre completo</label>
                   <input id="name" type="text" name="name" >
                   <p id="incorrectName" class="incorrect"></p>
                 </div>
@@ -77,7 +77,7 @@
                 <div>
                   <p class="textBoldSmall">Ingresa los datos de tu tarjeta: </p>
                   <label for= "cardNumber">N° de tarjeta</label>
-                  <input id="cardNumber" type="text" maxlength="16" name="cardNumber">
+                  <input id="cardNumber" type="text" maxlength="16" name="cardNumber" class="cardNumber">
                   <p id="incorrectCard" class="incorrect"></p>
                 </div>
                 <div>
@@ -95,22 +95,23 @@
             </form>
           </section>
         </section>
-      <section id= "thirdView" class= "view">
-        <section id="containerAnswer" class="container">
-          <section class="congratulations" >
-            <p>¡Felicidades! Compra exitosa</p>
+      </div>
+      <div id="thirdContainer" class="view hide">
+        <section id= "thirdView" class= "thirdView hide">
+          <section id="containerAnswer" class="container">
+            <h2 class="subtitle"> ¡Felicidades! Compra exitosa</h2>
+            <section>
+              <img class="successImage" src="undraw_celebration_0jvk.svg" alt="felicidades">
+            </section>
+            <section class="showInfo">
+              <p class="textBoldSmall">Datos de pago</p><br>
+              <p id="nameCatch"></p>
+              <p id="emailCatch"></p>
+              <p id="encripted"></p>
+            </section> 
           </section>
-          <section>
-            <img class="successImage" src="undraw_celebration_0jvk.svg" alt="felicidades">
-          </section>
-          <section class="showInfo">
-            <p class="textBoldSmall">Datos de pago</p><br>
-            <p id="nameCatch"></p>
-            <p id="emailCatch"></p>
-            <p id="encripted"></p>
-          </section> 
         </section>
-      </section>
+      </div>
     </main>
     <footer>
       <p>2020 Aprende en casa. Todos los derechos reservados.</p>
