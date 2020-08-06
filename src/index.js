@@ -1,7 +1,7 @@
 import validator from './validator.js';
 //console.log(validator);
 
-//Cambia de la primera view con cualquier botón. Por eso usamo el ciclo y queryselector All :) 
+//Cambia de la primera view con cualquier botón. Por eso usamos el ciclo y queryselector All :) 
 let firstContainer=document.getElementById('firstContainer')
 let secondContainer=document.getElementById('secondContainer');
 
@@ -14,7 +14,7 @@ for (let i = 0; i<item.length; i++){
   })
 }
 
-//Segun view lógica de validación de datos
+//Segun lógica de validación de datos
 let catchCard=document.getElementById('cardNumber');
 let incorrectCard=document.getElementById('incorrectCard');
 incorrectCard.style.color='#EB4B98';
@@ -29,6 +29,7 @@ incorrectExpireDate.style.color='#EB4B98';
 let encriptedCard=document.getElementById('encripted');
 let thirdContainer=document.getElementById('thirdContainer');
 
+// Este botón va a llamar 2 funciones del validator y validará todos los datos que ingresó el cliente
 const buttonPay = document.getElementById('buttonPay');
 
 buttonPay.addEventListener('click',() => {
@@ -43,6 +44,7 @@ buttonPay.addEventListener('click',() => {
   let ccv=document.getElementById('ccv').value;
   let expireDate= document.getElementById('expireDate').value;
 
+//Validamos que los datos sean correctos.
 let noError = true;
 
 if (name === ''){
