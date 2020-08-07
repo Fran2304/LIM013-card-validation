@@ -111,6 +111,13 @@ border-radius: 15px;
     text-align:center;
 }
 
+.name,.email {
+    width:300px;
+    height:20px;
+}
+
+
+
 
 input{
 position:relative;
@@ -118,13 +125,12 @@ margin-top:10px;
 width:200px;
 left: 30px;
 }
+
 .cardNumber{
 position: relative;
 left:70px;    
 }
     
-
-
 
 #buttonPay{
 position: relative;

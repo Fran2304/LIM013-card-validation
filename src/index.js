@@ -1,18 +1,9 @@
 import validator from './validator.js';
 //console.log(validator);
 
-//Cambia de la primera view con cualquier botón. Por eso usamos el ciclo y queryselector All :) 
+//Variables de  primera view 
 let firstContainer=document.getElementById('firstContainer')
 let secondContainer=document.getElementById('secondContainer');
-
-const item = document.querySelectorAll('.item');
-for (let i = 0; i<item.length; i++){
-  item[i].addEventListener('click',() => {
-    firstContainer.classList.add('hide');
-    window.scroll(0,0);
-    secondContainer.classList.remove('hide');
-  })
-}
 
 //Segun lógica de validación de datos
 let catchCard=document.getElementById('cardNumber');
@@ -28,6 +19,19 @@ let incorrectExpireDate=document.getElementById('incorrectExpireDate');
 incorrectExpireDate.style.color='#EB4B98';
 let encriptedCard=document.getElementById('encripted');
 let thirdContainer=document.getElementById('thirdContainer');
+
+
+//Con cualquier botón cambiará de view. Por eso usamos el ciclo y queryselector All :) 
+
+const item = document.querySelectorAll('.item');
+for (let i = 0; i<item.length; i++){
+  item[i].addEventListener('click',() => {
+    firstContainer.classList.add('hide');
+    window.scroll(0,0);
+    secondContainer.classList.remove('hide');
+  })
+}
+
 
 // Este botón va a llamar 2 funciones del validator y validará todos los datos que ingresó el cliente
 const buttonPay = document.getElementById('buttonPay');
@@ -76,7 +80,6 @@ if(noError){
   thirdContainer.classList.remove('hide');
   window.scroll(0,0);
 }
-
 
 //Coloca la tarjeta encriptada
 encriptedCard.innerHTML= `N° de tarjeta: ${cardMask}`;
